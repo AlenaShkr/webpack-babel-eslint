@@ -1,4 +1,6 @@
 let path = require('path'); //для подключения доп.библиотек
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+
 let conf = {
   entry: './src/index.js',
   output: {
@@ -20,6 +22,15 @@ let conf = {
         // }
       },
       {
+        test: /\.html$/,
+        use: [{
+          loader: 'html-loader',
+          options: {
+            minimize: false
+          }
+        }]
+      },
+      {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
@@ -31,6 +42,12 @@ let conf = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: '../index.html'
+    }),
+  ]
 };
 
 module.exports = conf;

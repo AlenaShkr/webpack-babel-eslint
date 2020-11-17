@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction sum(a, b) {\n  retur
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _first_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./first.js */ \"./src/first.js\");\n\nconsole.log('hi');\nvar div = document.createElement('p');\ndiv.innerHTML = 'hi people!';\ndocument.body.appendChild(div);\nconsole.log(Object(_first_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(2, 3));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _first__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./first */ \"./src/first.js\");\n\nwindow.console.log('hi');\nvar div = document.createElement('p');\ndiv.innerHTML = 'hi people!';\ndocument.body.appendChild(div);\nwindow.console.log(Object(_first__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(2, 3));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
